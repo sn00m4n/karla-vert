@@ -1,11 +1,5 @@
 # karla-vert
 
-
-|_/  _   _ |  _   __ \  /  _  _ |_
-| \ (_| |  | (_|      \/  (- |  |_
-
-
-
 ## Usage: 
 karla_vert -f <FILE_PATH> -o <OUTPUT_PATH> <COMMAND>
 
