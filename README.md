@@ -20,7 +20,7 @@ computer-name
 current-version        
 old-os-versions        
 last-shutdown-time     
-help                   Print this message or the help of the given subcommand(s)
+help:                   Print this message or the help of the given subcommand(s)
 
 ## Options:
 -f <FILE_PATH>        path where json output is located
