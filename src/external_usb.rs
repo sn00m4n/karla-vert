@@ -96,7 +96,7 @@ pub fn vic_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -124,7 +124,7 @@ pub fn device_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -153,7 +153,7 @@ pub fn hid_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -180,7 +180,7 @@ pub fn mounted_dev_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -207,7 +207,7 @@ pub fn scsi_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -237,7 +237,7 @@ pub fn usb_entry_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -267,7 +267,7 @@ pub fn usbstor_entry_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;

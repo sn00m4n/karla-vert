@@ -48,7 +48,7 @@ pub fn logons_rdp_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -74,7 +74,7 @@ pub fn authentication_service_karla_vert(input: &str, output: &str) -> Result<()
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -99,7 +99,7 @@ pub fn profile_list_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;

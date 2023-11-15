@@ -43,7 +43,7 @@ pub fn computer_name_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -76,7 +76,7 @@ pub fn os_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
@@ -97,7 +97,7 @@ pub fn shutdown_karla_vert(input: &str, output: &str) -> Result<()> {
     }
 
     let serialized = serde_json::to_string(&entries)?;
-    println!("{serialized}");
+
     let file = File::create(output)?;
     let mut writer = BufWriter::new(file);
     write!(&mut writer, "{}", &serialized)?;
