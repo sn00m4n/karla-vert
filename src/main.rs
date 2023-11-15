@@ -26,7 +26,6 @@ use crate::system_info::{computer_name_karla_vert, os_karla_vert, shutdown_karla
 | . \\ (_| | |  | | (_| |_____\\ V /  __/ |  | ||  __/ |
 |_|\\_\\__,_|_|  |_|\\__,_|      \\_/ \\___|_|   \\__\\___|_|
 
-Karla-Verter uses default output-names from truffleyard for now!
 "
 )]
 struct Cli {
