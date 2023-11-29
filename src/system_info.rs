@@ -39,7 +39,7 @@ pub fn computer_name_karla_vert(input: &str, output: &str) -> Result<()> {
         let line = line?;
 
         let entry: ComputerName = serde_json::from_str(&line)?;
-        entries.push(vec![entry.computer_name]);
+        entries.push(entry.computer_name);
     }
 
     let serialized = serde_json::to_string(&entries)?;
